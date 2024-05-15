@@ -14,6 +14,10 @@ public class SimpleStartupTestDrive {
         //Invokes the setter method on the startup
         dot.setLocationCells(locations);
 
+        int userGuess = 2;
+
+        String result = dot.checkYourself(userGuess);
+
         String testResult = "failed";
         if(result.equals("hit")){
             testResult = "passed";
